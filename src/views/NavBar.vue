@@ -3,7 +3,7 @@
         <!-- logo -->
         <div class="logo" :style="{'background':themeColor}" @click="$router.push('/')"
              :class="collapse?'menu-bar-collapse-width':'menu-bar-width'">
-            <img v-if="collapse"  src="@/assets/logo.png"/> <div>{{collapse?'':appName}}</div>
+            <img v-if="collapse"  src="@/assets/img/logo.png"/> <div>{{collapse?'':appName}}</div>
         </div>
         <!-- 导航菜单 -->
         <el-menu ref="navmenu" default-active="2" :class="collapse?'menu-bar-collapse-width':'menu-bar-width'"

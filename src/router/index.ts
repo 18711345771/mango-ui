@@ -42,7 +42,8 @@ const routes = [
 
 const router:any = new VueRouter({
   mode: 'history',
-  base: process.env.BASE_URL,
+  // base: process.env.BASE_URL,
+  base: '/mango-ui',
   routes
 });
 

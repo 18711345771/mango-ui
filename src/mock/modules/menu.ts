@@ -132,8 +132,8 @@ export function findNavTree() {
                 "parentName": "系统管理",
                 "level": 1,
                 "children": []
-            }]
-            },
+            }
+            ]},
             {
             "id": 43,
             "createBy": "admin",

@@ -105,12 +105,12 @@
         // 获取分页数据
         findPage(data:any) {
             if(data !== null) {
-                this.pageRequest = data.pageRequest
+                this.pageRequest = data.pageRequest;
             }
-            this.pageRequest.params = [{name:'label', value:this.filters.label}]
+            this.pageRequest.params = [{name:'label', value:this.filters.label}];
             (this as any).$api.config.findPage(this.pageRequest).then((res:any) => {
-                this.pageResult = res.data
-            }).then(data!=null?data.callback:'')
+                this.pageResult = res.data;
+            }).then(data!=null?data.callback:'');
         };
         // 批量删除
         handleDelete(data:any) {

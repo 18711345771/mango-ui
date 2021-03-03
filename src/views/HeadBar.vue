@@ -94,35 +94,35 @@
         @Provide()data:any=[
             {
                 key: "1",
-                avatar:'@/assets/user.png',
+                avatar:'@/assets/img/user.png',
                 content:'你修改了用户密码',
                 sender:'诸葛亮',
                 time:'5分钟前'
             },
             {
                 key: "2",
-                avatar:'@/assets/user.png',
+                avatar:'@/assets/img/user.png',
                 content:'你修改了用户头像',
                 sender:'武则天',
                 time:'2小时前'
             },
             {
                 key: "3",
-                avatar:'@/assets/user.png',
+                avatar:'@/assets/img/user.png',
                 content:'今日25名新成员加入',
                 sender:'王语嫣',
                 time:'昨天'
             },
             {
                 key: "4",
-                avatar:'@/assets/user.png',
+                avatar:'@/assets/img/user.png',
                 content:'您发表了一篇新随笔',
                 sender:'苍井空',
                 time:'昨天'
             },
             {
                 key: "5",
-                avatar:'@/assets/user.png',
+                avatar:'@/assets/img/user.png',
                 content:'您发表了一篇新随笔',
                 sender:'上官婉儿',
                 time:'前天'
@@ -156,7 +156,7 @@
             let user = sessionStorage.getItem("user");
             if (user) {
                 this.user.name = user;
-                this.user.avatar = require("@/assets/user.png");
+                this.user.avatar = require("@/assets/img/user.png");
             }
         };
 

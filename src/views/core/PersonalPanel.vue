@@ -2,7 +2,7 @@
     <div class="personal-panel">
         <div class="personal-desc" :style="{'background':this.$store.state.themeColor}">
             <div class="avatar-container">
-                <img class="avatar" :src="require('@/assets/user.png')" />
+                <img class="avatar" :src="require('@/assets/img/user.png')" />
             </div>
             <div class="name-role">
                 <span class="sender">{{ user.name }} - {{ user.role }}</span>
@@ -129,7 +129,7 @@
                         (this as any).$api.user.updatePassword(params).then((res:any) => {
                             this.updatePwdLoading = false;
                             if(res.code == 200) {
-                                this.$message({ message: '操作成功', type: 'success' })
+                              this.$message({ message: '操作成功', type: 'success' });
                                 (this.$refs['updatePwdDataForm'] as any).resetFields();
                                 this.logoutApi()
                             } else {
@@ -166,8 +166,8 @@
                 .catch(() => {})
         };
         logoutApi() {
-            sessionStorage.removeItem("user")
-            this.$router.push("/login")
+            sessionStorage.removeItem("user");
+            this.$router.push("/login");
             (this as any).$api.login.logout().then((res:any) => {
             }).catch((res:any)=>{
             })
@@ -185,7 +185,7 @@
             pageRequest= { pageNum: 1, pageSize: 10000000 };
             pageRequest.params = [{name:'status', value:'online'}];
             (this as any).$api.loginlog.findPage(pageRequest).then((res:any) => {
-                this.onlineUser = res.data.content.length
+                this.onlineUser = res.data.content.length;
             })
         };
         // 获取访问次数

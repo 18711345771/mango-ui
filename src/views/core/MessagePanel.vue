@@ -4,7 +4,7 @@
         <div class="message-content">
             <div v-for="item in data" :key="item.key" class="message-item">
                 <div class="message-avatar">
-                    <img class="avatar" :src="require('@/assets/user.png')" />
+                    <img class="avatar" :src="require('@/assets/img/user.png')" />
                 </div>
                 <span class="sender">
                     {{ item.sender }}

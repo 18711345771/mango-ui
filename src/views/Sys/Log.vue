@@ -53,12 +53,12 @@
         // 获取分页数据
         findPage(data:any) {
             if(data !== null) {
-                this.pageRequest = data.pageRequest
+                this.pageRequest = data.pageRequest;
             }
-            this.pageRequest.params = [{name:'userName', value:this.filters.name}]
+            this.pageRequest.params = [{name:'userName', value:this.filters.name}];
             (this as any).$api.log.findPage(this.pageRequest).then((res:any) => {
-                this.pageResult = res.data
-            }).then(data!=null?data.callback:'')
+                this.pageResult = res.data;
+            }).then(data!=null?data.callback:'');
         };
         // 时间格式化
         dateFormat(row:any, column:any, cellValue:any, index:any){

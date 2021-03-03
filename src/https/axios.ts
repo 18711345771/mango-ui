@@ -36,6 +36,7 @@ export default function $axios(options:any){
         //请求处理
         instance(options).then((res:any)=>{
             resolve(res);
+            //思考一下，是line38作为返回值，还是line40的false作为返回值？
             return false;
         }).catch((error:any)=>{
             reject(error);
